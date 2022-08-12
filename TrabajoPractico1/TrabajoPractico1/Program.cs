@@ -16,7 +16,7 @@ namespace TrabajoPractico1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormularioPrincipal());
+            Application.Run(new Ejercicio3());
         }
     }
 }
