@@ -24,7 +24,7 @@ namespace TrabajoPractico1
             else lblSeleccion.Text = gbSexo.Text + ": " + rbMasculino.Text + "\n";
             if (rbCasado.Checked == true) lblSeleccion.Text += gbEstado.Text + ": " + rbCasado.Text + "\n";
             else lblSeleccion.Text += gbEstado.Text + ": " + rbSoltero.Text + "\n";
-            lblSeleccion.Text += "Oficio: \n";
+            if (clbOficio.SelectedItems.Count > 0) lblSeleccion.Text += "Oficio: \n";
             foreach (string elemento in clbOficio.CheckedItems)
             {
                 lblSeleccion.Text += "-" + elemento + "\n";
